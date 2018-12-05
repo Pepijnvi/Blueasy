@@ -121,7 +121,7 @@ p{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .white-head{
@@ -229,7 +229,7 @@ header{
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    font-size: 30px;
+    font-size: 2em;
     color: white;
     background: rgba(51, 60, 68, 0.6);
 }
@@ -246,11 +246,11 @@ header{
 
 .service-head{
     margin-top: 20px;
-    font-size: 30px
+    font-size: 2em;
 }
 
 .service-text{
-    font-size: 10px;
+    font-size: 0.6em;
 }
 
 .service-flex{
@@ -393,7 +393,7 @@ header{
 }
 
 .twitter-message{
-    font-size: 25px;
+    font-size: 1.66em;
 }
 
 /* ==========================================================================
@@ -453,7 +453,7 @@ header{
 }
 
 .quote{
-    font-size: 20px; 
+    font-size: 1.33em; 
 }
 
 .testimonials-title{
@@ -461,10 +461,10 @@ header{
 }
 
 .testimonials-text{
-    font-size: 20px;
+    font-size: 1.33em;
     padding-top: 20px;
     padding-bottom: 10px;
-    font-size: 20px;    
+    font-size: 1.33em;    
 }
 
 .testimonials-name{
@@ -689,7 +689,7 @@ footer{
     }
 
     .just-section h2{
-        font-size: 20px;
+        font-size: 1.33em;
     }
 
     .just-video{
