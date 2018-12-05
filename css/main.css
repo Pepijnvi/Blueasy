@@ -1,0 +1,944 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   stuff everywhere on the page(standard)
+   ========================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-family: Segoe UI;
+}
+
+
+p{
+    font-size: 15px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.white-head{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.black-head{    
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.text-underline-white{
+    border-bottom: solid #FFFFFF;
+    margin: 0;
+}
+
+.text-underline-black{
+    border-bottom: solid #000000;
+}
+
+/* ==========================================================================
+   header
+   ========================================================================== */
+
+header{
+    background-image: url('../img/blueasy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    width: 100%;
+    height: 600px;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px;
+}
+
+
+.logo-mid{
+    color: #5AC6F2;
+}
+
+.menu-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ==========================================================================
+   navigation in header
+   ========================================================================== */
+
+.nav{
+    background: rgba(0, 0, 0, 0.6);
+    height: 120px;
+}
+
+
+
+.nav-container{
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.nav-item{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    height: 20px;
+    text-align: center; 
+}
+
+.home{
+    color: #5AC6F2;
+    border: 2px solid #5AC6F2;
+}
+
+.nav-item:hover {
+    color: #5AC6F2;
+    border: 2px solid #5AC6F2;
+    padding: 10px;
+}
+
+/* ==========================================================================
+   text in top picture
+   ========================================================================== */
+
+.picture-text-container{
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 150px;
+    text-align: center; 
+}
+
+.picture-text{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background: rgba(51, 60, 68, 0.6);
+}
+
+/* ==========================================================================
+   service section
+   ========================================================================== */
+
+.service{
+    background: #5ac6f2;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.service-head{
+    margin-top: 20px;
+    font-size: 30px
+}
+
+.service-text{
+    font-size: 10px;
+}
+
+.service-flex{
+    display: flex; 
+}
+
+.service-item{
+    widows: 25%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.service-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   portfolio section
+   ========================================================================== */
+
+.portfolio-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.portfolio-menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-title{
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    
+}
+
+.por-title{
+    border-bottom: solid black;
+}
+
+.portfolio-menu{
+    grid-area: 1 / 3 / 2 / 5
+}
+
+.menu-item{
+    padding: 10px;
+}
+
+.menu-item:hover{
+    border: solid #5ac6f2;
+    color: #5ac6f2;
+    padding: 10px;
+}
+
+.portfolio div{
+    padding: 20px;
+}
+
+/* ==========================================================================
+   default-section
+   ========================================================================== */
+
+.default{
+    background: #516068;
+}
+
+.just-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    color: #FFFFFF;
+}   
+
+.just-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+}
+
+.just-video{
+    padding-top: 100px; 
+    width: 500px;
+    height: 200px;
+}
+
+.just-text-container{
+    width: 45%;
+}
+
+.just-text{
+    padding-top: 10px;
+}
+
+.visit-button{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    color: #344047;
+    border: solid 2px #344047;
+    margin-top: 40px;
+    padding: 8px;
+    width: 120px;
+}
+
+/* ==========================================================================
+   twitter-message-section
+   ========================================================================== */
+
+.twitter{
+    background: #5ac6f2;
+    color: #FFFFFF
+}
+
+.twitter-head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.twitter-container{
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 100px;
+    padding-top: 50px;    
+}
+
+.twitter-logo{
+    height: 20px;
+}
+
+.twitter-message{
+    font-size: 25px;
+}
+
+/* ==========================================================================
+   Who is john section
+   ========================================================================== */
+
+.who{
+    background-image: url("../img/blueasy2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: #cccccc;
+    color: #FFFFFF;
+}
+
+.who-title{
+    display: flex;
+}
+
+.who-container{
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.who-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.who-grid-item{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.media-icon{
+    border: solid #FFFFFF;
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+/* ==========================================================================
+   testimonials section
+   ========================================================================== */
+
+.testimonials-container{
+    padding-top: 75px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.testimonials-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote{
+    font-size: 20px; 
+}
+
+.testimonials-title{
+    display: flex;
+}
+
+.testimonials-text{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;    
+}
+
+.testimonials-name{
+    color: #5ac6f2;
+    margin-bottom: 60px;
+}
+
+/* ==========================================================================
+   contact section
+   ========================================================================== */
+
+.contact{
+    background-image: url(../img/blueasy3.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF
+}
+
+.contact-container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.contact-title{
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.input-small{
+    width: 60%;
+    height: 50%;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+}
+
+.contact-information p{
+    padding-top: 5px; 
+}
+
+.input-big{
+    width: 100%;
+    height: 90%;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+}
+
+#full-name-box{
+    grid-area: 1 / 1 / 2 / 2;
+    
+}
+
+#email{
+    grid-area: 2 / 1 / 2 / 2;
+}
+
+#message-box{
+    grid-area: 3 / 1 / 6 / 3;  
+}
+
+.message-button{
+    background:#5ac6f2;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+footer{
+    background: #344047 ;
+    padding: 50px;
+    color: #516068;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-flex{
+    display: flex;
+}
+
+.footer-flex p{
+    padding: 0 15px;
+    border-left: 1px solid;
+}
+
+.footer-flex p:first-child{
+    border-left: none;
+}
+
+/* ==========================================================================
+   responsiveness 1000px
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px){
+
+    /*header*/
+    .header-flex{
+        flex-wrap: wrap;
+    }
+
+    .menu-flex{
+        width: 100%;
+    }
+    
+    /*navigation in header*/
+    .nav{
+        height: 40%;
+    }
+
+    .nav-item:first-child{
+        margin-left: 0;
+    }
+
+    .nav-item:last-child{
+        margin-right: 0;
+    }
+    
+
+    .picture-text-container{
+        padding-top: 100px;
+    }
+
+    .service-flex{
+        flex-wrap: wrap;
+    }
+
+    .service-item{
+        width: 46%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 50px;
+    }
+
+    .portfolio-title{
+    grid-area: 1 / 1 / 2 / 3; 
+    }
+
+    .portfolio-menu{
+    grid-area: 2 / 1 / 3 / 3
+    }
+
+    .just-container{
+        flex-wrap: wrap;
+    }
+    
+    .just-video{
+        display: none;
+    }
+
+    .just-text-container{
+    width: 100%;
+    }
+    
+    
+
+}
+
+/* ==========================================================================
+   responsiveness 580px
+   ========================================================================== */
+
+@media only screen and (max-width: 580px){
+    header{
+        height: 200%
+    }
+
+
+    .menu-flex{
+        display: inline-block;
+    }
+
+    .picture-text-container{
+        padding-top: 20px;
+    }
+
+    .nav-item{
+        margin-left: 0;
+    }
+
+    .portfolio-grid{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 50px repeat(5, 1fr);
+    }
+
+    .portfolio-title{
+    grid-area: 1 / 1 / 2 / 2; 
+    }
+
+    .portfolio-menu{
+    grid-area: 2 / 1 / 2 / 2;
+    display: inline-block;
+    }
+
+    .hidden-pic{
+        display: none;
+    }
+
+    .service-item{
+        width: 100%;
+    }
+
+    .just-section h2{
+        font-size: 20px;
+    }
+
+    .just-video{
+        display: none;
+    }
+
+    .just-text-container{
+    width: 100%;
+    }
+
+    .who-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    }
+
+
+    .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding-bottom: 20px;
+    }
+
+    .input-small{
+    width: 60%;
+    height: 50%;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+    }
+
+    .contact-information p{
+    padding-top: 5px; 
+    }
+
+    .input-big{
+    width: 100%;
+    height: 90%;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+    }
+
+    #full-name-box{
+    grid-area: 3 / 1 / 4 / 2;
+    
+    }
+
+    #email{
+    grid-area: 4 / 1 / 5 / 2;
+    }
+
+    #message-box{
+    grid-area: 5 / 1 / 7 / 2;  
+    }
+
+    .message-button{
+    padding: 10px 70px;
+    }
+
+    .footer-container{
+        display: inline-block;
+    }
+
+    .footer-flex{
+        display: inline-block;
+    }
+
+    .footer-flex p{
+        padding: 0px;
+        border: none;
+    }
+    
+    
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
